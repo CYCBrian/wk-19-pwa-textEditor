@@ -16,10 +16,10 @@ const initdb = async () =>
 export const putDb = async (content) =>{
   try{
     console.log('Saving...')
-    const jateDb = await openDB('JATE',1);
-    const transaction = jateDb.transaction('JATE','readwrite');
-    const safe = transaction.objectStore('JATE')
-    const request = safe.add({content: content})
+    const jateDb = await openDB('jate',1);
+    const transaction = jateDb.transaction('jate','readwrite');
+    const safe = transaction.objectStore('jate')
+    const request = safe.put({id: 1, value: content})
     const result = await request
     console.log('Content saved!', result)
   } catch(error){
@@ -32,13 +32,13 @@ export const putDb = async (content) =>{
 export const getDb = async () => {
   try {
     console.log('Retrieving...');
-    const jateDb = await openDB('JATE', 1);
-    const transaction = jateDb.transaction('JATE', 'readonly');
-    const safe = transaction.objectStore('JATE');
-    const request = safe.getAll();
+    const jateDb = await openDB('jate', 1);
+    const transaction = jateDb.transaction('jate', 'readonly');
+    const safe = transaction.objectStore('jate');
+    const request = safe.get(1);
     const result = await request;
     console.log('Retrieved all content!', result);
-    return result;
+    return result?.value;//if result exists, return the value, otherwise don't return anything...  basically an if statement
   } catch (error) {
     console.error('An error occurred:', error);
     return null;
