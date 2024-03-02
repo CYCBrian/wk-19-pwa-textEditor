@@ -1,12 +1,12 @@
 <a name="top"></a>
-# JATE - A Progressive Web Applications (PWA): Text Editor ![Static Badge](https://img.shields.io/badge/MIT-blue.svg?style=plastic)
+# JATE - A Progressive Web Applications (PWA): Text Editor ![Static Badge](https://img.shields.io/badge/License-MIT-blue?style=plastic)
 
 ## Table of Contents
 
 - [Overview](#overview)
 - [User Story](#user-story)
 - [Features](#features)
-- [Mock-up](#mock-up)
+- [Screenshot](#screenshot)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
 - [GitHub](#github)
@@ -44,13 +44,25 @@ SO THAT I can reliably retrieve them for later use
 8. Installable as PWA: Users can install the text editor as a Progressive Web Application, allowing them to access it directly from their device's home screen and enjoy a native-like experience.
 ```
 
-## Screenshots
+## Screenshot
+
+![Comparison of the browser app and the downloaded app.](./Assets/browser-app-side-by-side.jpg)
 
 ## Usage
 
-Simply click on the link here to access the web app: [JATE]()
+Simply click on the link here to access the web app: [JATE](https://wk-19-pwa-texteditor-1.onrender.com)
 
 ## Technologies Used
+
+![Static Badge](https://img.shields.io/badge/IndexedDB-green?style=plastic)
+
+![Static Badge](https://img.shields.io/badge/Babel-maroon?style=plastic)
+
+![Static Badge](https://img.shields.io/badge/Service_Worker_with_Workbox-orange?style=plastic)
+
+![Static Badge](https://img.shields.io/badge/Webpack-purple?style=plastic)
+
+![Static Badge](https://img.shields.io/badge/WebpackPwaManifest-navy?style=plastic)
 
 ## GitHub
 [Visit my GitHub Profile here!](https://github.com/CYCBrian)
@@ -59,6 +71,7 @@ Simply click on the link here to access the web app: [JATE]()
 The project is covered under the following license:
 [MIT](https://choosealicense.com/licenses/mit)
 
-
+- - -
+[Back to Top](#top)
 - - -
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
